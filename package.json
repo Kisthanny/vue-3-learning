@@ -1,0 +1,24 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:cjs": "node src/cjs/index.cjs",
+    "dev:esm": "node src/esm/index.mjs",
+    "compile": "babel src/babel --out-dir compiled",
+    "serve": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.3",
+    "@babel/preset-env": "7.20.2"
+  }
+}
